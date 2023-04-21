@@ -5,6 +5,7 @@ import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import profilePic from "../../public/images/profile/Resume.png";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
+import Skills from "@/Components/Skills";
 
 const AnimatedNo = ({ value }) => {
   const ref = useRef(null);
@@ -43,7 +44,7 @@ const about = () => {
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText
-            className="mb-16 text-5xl"
+            className="mb-16 text-4xl"
             text="Passionate & Ambitious..."
           />
           <div className="grid w-full grid-cols-8 gap-16">
@@ -139,6 +140,8 @@ const about = () => {
               </div>
             </div>
           </div>
+
+          <Skills/>
         </Layout>
       </main>
     </>
