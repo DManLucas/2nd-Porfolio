@@ -6,13 +6,15 @@ import React, { useEffect, useRef } from "react";
 import profilePic from "../../public/images/profile/Resume.png";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/Components/Skills";
+import Experience from "@/Components/Experience";
+import Education from "@/Components/Education";
 
 const AnimatedNo = ({ value }) => {
   const ref = useRef(null);
 
   const motionValue = useMotionValue(0);
   const springValue = useSpring(motionValue, { duration: 3000 });
-  const isInView = useInView(ref, {once: true});
+  const isInView = useInView(ref, { once: true });
 
   useEffect(() => {
     if (isInView) {
@@ -140,8 +142,9 @@ const about = () => {
               </div>
             </div>
           </div>
-
-          <Skills/>
+          <Skills />
+          <Experience />
+          <Education />
         </Layout>
       </main>
     </>
