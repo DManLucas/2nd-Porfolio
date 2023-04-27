@@ -89,12 +89,13 @@ export default function Home() {
           </div>
         </Layout>
         
-        <HireMe />
-        <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
+        <HireMe className="z-40"/>
+        <div className="relative right-8 bottom-8 
+        inline-block w-24 md:hidden ">
           <Image
             src={lightBulb}
             alt="Luminous Lucas"
-            className="w-full h-auto"
+            className="w-full h-auto "
           />
         </div>
       </main>
