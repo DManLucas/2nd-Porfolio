@@ -67,7 +67,7 @@ const Experience = () => {
             position="Front-end developer"
             companyLink="https://www.leveragebpo.com/"
             company="LeverageBPO"
-            time="May 2021 – Dec 2022"
+            time="May 2021 – "
             address="Shelton, Connecticut, United States"
             work="As a Web Developer, I maintained and improved websites for the company's clients. My work included updating, fixing issues, designing templates, modernizing old websites, and optimizing for mobile and speed. I also assisted Backend developers, maintained brand consistency, and turned UI/UX designs into prototypes using reusable code."
           />
