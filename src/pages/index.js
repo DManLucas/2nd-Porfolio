@@ -6,7 +6,7 @@ import AnimatedText from "@/Components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/Components/Icons";
 import HireMe from "@/Components/HireMe";
-import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg"
+import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 
 export default function Home() {
   return (
@@ -15,11 +15,18 @@ export default function Home() {
         <title>Lucas Nakeli's Portfolio</title>
         <meta name="description" content="Lucas Nakeli's Portfolio" />
       </Head>
-      <main className="flex items-center text-dark w-full min-h-screen">
+      <main
+        className="flex items-center text-dark 
+      w-full min-h-screen dark:text-light"
+      >
         <Layout className="pt-0">
           <div className="flex items-center justify-between w-full">
             <div className="w-1/2">
               <Image
+                priority
+                sizes="(max-width: 768px) 100vw,
+                (max-width: 1200px) 50vw,
+                50vw"
                 src={animePic}
                 width="1200"
                 height="1200"
@@ -45,7 +52,11 @@ export default function Home() {
                   text-light p-2.5 px-6 rounded-lg 
                   text-lg font-semibold hover:bg-light 
                   hover:text-dark border-2 border-solid
-                  border-transparent hover:border-dark"
+                  border-transparent hover:border-dark
+
+                  dark:bg-light dark:text-dark
+                  hover:dark:bg-dark hover:dark:text-light
+                  hover:dark:border-light"
                   href="/LucasNakeliResume.pdf"
                   target={"_blank"}
                   download={true}
@@ -55,7 +66,8 @@ export default function Home() {
                 </Link>
                 <Link
                   className="ml-4 text-lg font-medium 
-                  capitalize text-dark underline"
+                  capitalize text-dark underline
+                  dark:text-light"
                   href="mailto:luminouslucas@duck.com"
                   target={"_blank"}
                 >
@@ -65,9 +77,13 @@ export default function Home() {
             </div>
           </div>
         </Layout>
-        <HireMe/>
+        <HireMe />
         <div className="absolute right-8 bottom-8 inline-block w-24">
-          <Image src={lightBulb} alt="Luminous Lucas" className="w-full h-auto"/>
+          <Image
+            src={lightBulb}
+            alt="Luminous Lucas"
+            className="w-full h-auto"
+          />
         </div>
       </main>
     </>
