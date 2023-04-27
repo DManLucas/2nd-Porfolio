@@ -8,11 +8,11 @@ const HireMe = () => {
       className="fixed left-4 bottom-4 
     flex items-center justify-center overflow-hidden
     md:right-4 md:left-auto md:top-0 md:bottom-auto
-    md:absolute sm:right-0 "
+    md:absolute sm:right-0 z-[100]"
     >
       <div
         className="w-48 h-auto flex items-center 
-      justify-center relative md:w-24 z-50 "
+      justify-center relative md:w-24 "
       >
         <CircularText
           className={`fill-dark animate-spin-slow 
