@@ -5,7 +5,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import whatsappLucas from "../../public/images/projects/1whatsappLucas.png";
+import whatsappLucas from "../../public/images/projects/whatsappLucas.png";
 import ToDoApp from "../../public/images/projects/ToDoApp.png";
 import QuizApp from "../../public/images/projects/QuizApp.png";
 import MixMatch from "../../public/images/projects/MixMatch.png";
