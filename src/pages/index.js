@@ -89,7 +89,7 @@ export default function Home() {
           </div>
         </Layout>
         
-        <HireMe className="z-40"/>
+        <HireMe />
         <div className="relative right-8 bottom-8 
         inline-block w-24 md:hidden ">
           <Image

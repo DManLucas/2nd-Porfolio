@@ -12,7 +12,7 @@ const HireMe = () => {
     >
       <div
         className="w-48 h-auto flex items-center 
-      justify-center relative md:w-24 "
+      justify-center relative md:w-24 z-50 "
       >
         <CircularText
           className={`fill-dark animate-spin-slow 
