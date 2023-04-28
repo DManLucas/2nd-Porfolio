@@ -71,6 +71,7 @@ function NavBar() {
         className="flex-col justify-center
       items-center hidden lg:flex z-30 fixed"
         onClick={handleClick}
+        aria-label="Hamburger Menu"
       >
         <span
           className={`bg-dark dark:bg-light 
@@ -123,6 +124,7 @@ function NavBar() {
           </motion.a>
 
           <button
+          aria-label="theme switcher"
             className={`ml-3 flex items-center justify-center
           rounded-full p-1 ${
             mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
@@ -198,6 +200,7 @@ function NavBar() {
             </motion.a>
 
             <button
+            aria-label="Theme switcher"
               className={`ml-3 sm:mx-1 flex items-center justify-center
           rounded-full p-1 ${
             mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
