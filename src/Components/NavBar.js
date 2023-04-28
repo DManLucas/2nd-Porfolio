@@ -38,6 +38,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
         className={`${className} relative group text-light
         dark:text-dark my-2`}
         onClick={handleCLick}
+        aria-label="Hamburger Menu"
       >
         {title}
         <span
