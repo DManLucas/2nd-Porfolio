@@ -11,13 +11,16 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
     w-[60%] mx-auto flex flex-col items-start 
     justify-between md:w-[80%]"
     >
-      <LiIcon reference={ref}/>
+      <LiIcon reference={ref} />
       <motion.div
-      initial={{y:50}}
-      whileInView={{y:0}}
-      transition={{duration:0.5, type:"spring"}}>
-        <h3 className="capitalize font-bold text-2xl
-        sm:text-xl xs:text-[1rem]">
+        initial={{ y: 50 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 0.5, type: "spring" }}
+      >
+        <h3
+          className="capitalize font-bold text-2xl
+        sm:text-xl xs:text-[1rem]"
+        >
           {position}&nbsp;
           <a
             href={companyLink}
@@ -27,8 +30,10 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
             @{company}
           </a>
         </h3>
-        <span className="capitalize font-medium 
-        text-dark/75 dark:text-light/75 xs:text-sm">
+        <span
+          className="capitalize font-medium 
+        text-dark/75 dark:text-light/75 xs:text-sm"
+        >
           {time} | {address}
         </span>
         <p className="font-medium w-full md:text-sm">{work}</p>
@@ -51,8 +56,11 @@ const Experience = () => {
       >
         Experience
       </h2>
-      <div ref={ref} className="w-[75%] mx-auto relative
-      lg:w-[90%] md:w-full">
+      <div
+        ref={ref}
+        className="w-[75%] mx-auto relative
+      lg:w-[90%] md:w-full"
+      >
         <motion.div
           style={{ scaleY: scrollYProgress }}
           className="absolute left-9 top-0 w-[4px] 
@@ -64,10 +72,18 @@ const Experience = () => {
         justify-between ml-4 xs:ml-2"
         >
           <Details
+            position="Lecturer"
+            companyLink="https://attibloemfontein.co.za/"
+            company="ATTI Bloemfontein"
+            time="July 2023 – Dec 2023"
+            address="41 Barnes Street, Bloemfontein | Free State"
+            work="Developed and implemented a curriculum aligned with MICTSETA standards, resulting in increased student engagement, improved technical skills, impactful mentorship, and full compliance."
+          />
+          <Details
             position="Front-end developer"
             companyLink="https://www.treehousemarketing.com/"
             company="LeverageBPO/Treehouse Marketing"
-            time="May 2021 – "
+            time="May 2021 – Dec 2022 "
             address="Shelton, Connecticut, United States"
             work="As a Web Developer outsourced to Treehouse Marketing, I maintained and improved websites for the company's clients. My work included updating, fixing issues, designing templates, modernizing old websites, and optimizing for mobile and speed. I also assisted Backend developers, maintained brand consistency, and turned UI/UX designs into prototypes using reusable code."
           />
