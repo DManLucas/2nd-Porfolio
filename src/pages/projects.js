@@ -10,6 +10,8 @@ import ToDoApp from "../../public/images/projects/ToDoApp.png";
 import QuizApp from "../../public/images/projects/QuizApp.png";
 import MixMatch from "../../public/images/projects/MixMatch.png";
 import DiceGame from "../../public/images/projects/DiceGame.png";
+import WorldEditor from "../../public/images/projects/VirtualWorld.png";
+import SelfDC from "../../public/images/projects/self-driving-car.png";
 import ReceipeApp from "../../public/images/projects/ReceipeApp.png";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/Components/TransitionEffect";
@@ -184,6 +186,24 @@ function projects() {
             className="grid grid-cols-12 gap-24 gap-y-32
           xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0"
           >
+            <div className="col-span-12">
+              <FeaturedProject
+                title="V-World-Editor"
+                summary="IV-World Editor is a user-friendly application designed to simplify the process of creating and editing virtual environments. Whether you're a game developer, a virtual reality enthusiast, or a hobbyist, V-World Editor provides the tools you need to bring your ideas to life."
+                link="https://vworld-editor.netlify.app/"
+                type="Featured Project"
+                img={WorldEditor}
+                github="https://github.com/DManLucas/V-World-editor"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="Self Driving Car"
+                type="Secondary Project"
+                img={SelfDC}
+                github="https://github.com/DManLucas/Self_Driving_Car"
+              />
+            </div>
             <div className="col-span-12">
               <FeaturedProject
                 title="WhatsAppLucas"
